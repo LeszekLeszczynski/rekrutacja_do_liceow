@@ -1,0 +1,123 @@
+== Rekrutacja do liceów
+
+[NOTE]
+====
+Rzeczywiste zasady rekrutacji są opisane tutaj https://www.kuratorium.waw.pl/pl/rodzice-i-uczniowie/rekrutacja-do-szkol/zasady-rekrutacji/17150,Zasady-rekrutacji-do-szkol-ponadpodstawowych-20232024.html. Zasady opisane poniżej są uproszczone, ale nie ma to znaczenia dla zadania.
+====
+
+=== Szkoły
+
+Każda szkoła ogłasza listę klas, do których mogą kandydować uczniowie. Klasa ma ograniczoną liczbę miejsc. Z każdą klasą związane są cztery przedmioty, na podstawie których liczone są punkty do rekrutacji.
+
+Dane szkół są przechowywane w pliku YAML. Przykładowy plik:
+
+[source,yaml]
+----
+schools:
+  - code: XIV
+    name: Staszic
+    classes:
+    - code: A
+      size: 32
+      subjects: [ POL, MAT, FIZ, ANG ]
+    - code: B
+      size: 32
+      subjects: [ POL, MAT, FIZ, PLA ]
+----
+
+=== Uczniowie
+
+Każdy uczeń może wybrać dowolną liczbę klas, do których chce aplikować, podając je w kolejności swojej preferencji.
+
+Każdy uczeń posiada wynik egzaminu (w skali 1-100), oraz oceny na świadectwie.
+
+Uczniowie są opisani w pliku YAML. Przykładowy plik:
+
+[source,yaml]
+----
+pupils:
+  - pesel: 12345678901
+    name: Alojzy
+    surname: Gąbka
+    exam: 72
+    notes:
+      POL: 4
+      MAT: 5
+      FIZ: 4
+      ANG: 4
+      PLA: 5
+    choices: [ "XIV/A", "XIV/B" ]
+----
+
+=== Punktacja
+
+Punktacja do klasy liczy się według następujących zasad:
+
+Uczeń otrzymuje punkty za oceny na świadectwie z przedmiotów, które są związane z klasą. Za oceny otrzymuje punkty zgodnie z poniższą tabelą:
+
+[cols="2*",options="header"]
+|===
+|Ocena | Punkty
+| 6    | 25
+| 5    | 20
+| 4    | 15
+| 3    | 7
+| 2    | 3
+|===
+
+Do sumy punktów za oceny doliczana jest ocena z egzaminu.
+
+Maksymalna suma punktów wynosi 200.
+
+=== Rekrutacja
+
+Do każdej klasy przydzielani są uczniowie, którzy wybrali tę klasę jako swoją pierwszą preferencję. 
+
+Jeśli liczba uczniów, którzy wybrali klasę jako pierwszą preferencję jest mniejsza niż liczba miejsc w klasie, to wszyscy ci uczniowie są przydzielani do klasy.
+
+Jeżeli w klasie jest więcej uczniów, którzy wybrali klasę jako pierwszą preferencję niż jest miejsc, to do klasy przydzielani są uczniowie z najwyższą sumą punktów. Jeżeli jest więcej uczniów z taką samą sumą punktów niż jest miejsc, to do klasy przydzielani są wszyscy uczniowie z taką samą sumą punktów.
+
+Jeżeli uczeń nie dostał się do klasy, którą wskazał jako pierwszą preferencję, preferencja przechodzi na następną klasę z listy wyboru (i podobnie w przypadku kolejnych nieudanych prób). Jeżeli uczeń nie dostał się do żadnej z klas, to nie jest przydzielany do żadnej klasy.
+
+== Zadanie
+
+Należy przeprowadzić przydział uczniów do klas, zgodnie z powyższymi zasadami. Pliki wejściowe z danymi można znaleźć w katalogu test_data.
+
+Wynik powinien być zapisany w pliku YAML w następującym formacie:
+
+[source,yaml]
+----
+schools:
+  code: XIV
+  name: Staszic
+    classes:
+    - code: A
+        pupils:
+        - pesel: 12345678901
+          name: Alojzy
+          surname: Gąbka
+          points: 152
+        - pesel: 12345678902
+          name: Kajetan
+          surname: Kajetanowicz
+          points: 150
+    - code: B
+        pupils:
+        - pesel: 12345678903
+          name: Pafnucy
+          surname: Ochęduszko
+          points: 142
+        - pesel: 12345678904
+          name: Ksawery
+          surname: Baleron
+          points: 140
+
+not_assigned:
+    - pesel: 12345678905
+      name: Onufry
+      surname: Kopernik
+    - pesel: 12345678906
+      name: Salwador
+      surname: Dali
+
+----
