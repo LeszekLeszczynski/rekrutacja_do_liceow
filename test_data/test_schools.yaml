@@ -1,0 +1,331 @@
+- classes:
+  - code: A
+    size: 35
+    subjects:
+    - POL
+    - WOS
+    - FIZ
+    - CHE
+  - code: B
+    size: 33
+    subjects:
+    - WOS
+    - ANG
+    - REL
+    - HIS
+  - code: C
+    size: 31
+    subjects:
+    - CHE
+    - WOS
+    - BIO
+    - W-F
+  code: A
+  name: Knight PLC
+- classes:
+  - code: A
+    size: 25
+    subjects:
+    - HIS
+    - INF
+    - GEO
+    - W-F
+  - code: B
+    size: 25
+    subjects:
+    - WOS
+    - CHE
+    - MAT
+    - REL
+  - code: C
+    size: 33
+    subjects:
+    - GEO
+    - W-F
+    - FIZ
+    - BIO
+  - code: D
+    size: 29
+    subjects:
+    - CHE
+    - ANG
+    - FIZ
+    - HIS
+  - code: E
+    size: 29
+    subjects:
+    - W-F
+    - HIS
+    - ANG
+    - REL
+  - code: F
+    size: 26
+    subjects:
+    - HIS
+    - FIZ
+    - CHE
+    - ANG
+  code: B
+  name: King-Gross
+- classes:
+  - code: A
+    size: 31
+    subjects:
+    - W-F
+    - INF
+    - CHE
+    - POL
+  - code: B
+    size: 26
+    subjects:
+    - CHE
+    - FIZ
+    - WOS
+    - MAT
+  - code: C
+    size: 26
+    subjects:
+    - WOS
+    - REL
+    - INF
+    - CHE
+  code: C
+  name: Davis-Schmidt
+- classes:
+  - code: A
+    size: 31
+    subjects:
+    - FIZ
+    - W-F
+    - INF
+    - CHE
+  - code: B
+    size: 31
+    subjects:
+    - REL
+    - INF
+    - BIO
+    - GEO
+  - code: C
+    size: 32
+    subjects:
+    - ANG
+    - BIO
+    - INF
+    - CHE
+  - code: D
+    size: 29
+    subjects:
+    - WOS
+    - HIS
+    - ANG
+    - CHE
+  - code: E
+    size: 26
+    subjects:
+    - W-F
+    - HIS
+    - MAT
+    - REL
+  - code: F
+    size: 26
+    subjects:
+    - FIZ
+    - POL
+    - REL
+    - INF
+  code: D
+  name: Jordan PLC
+- classes:
+  - code: A
+    size: 31
+    subjects:
+    - ANG
+    - WOS
+    - CHE
+    - REL
+  - code: B
+    size: 32
+    subjects:
+    - GEO
+    - WOS
+    - INF
+    - BIO
+  - code: C
+    size: 30
+    subjects:
+    - REL
+    - GEO
+    - INF
+    - BIO
+  code: E
+  name: Jones, Sullivan and White
+- classes:
+  - code: A
+    size: 29
+    subjects:
+    - BIO
+    - FIZ
+    - WOS
+    - W-F
+  - code: B
+    size: 29
+    subjects:
+    - FIZ
+    - W-F
+    - HIS
+    - POL
+  - code: C
+    size: 28
+    subjects:
+    - MAT
+    - HIS
+    - GEO
+    - ANG
+  code: F
+  name: Wells Inc
+- classes:
+  - code: A
+    size: 26
+    subjects:
+    - ANG
+    - W-F
+    - REL
+    - WOS
+  - code: B
+    size: 27
+    subjects:
+    - ANG
+    - HIS
+    - WOS
+    - MAT
+  - code: C
+    size: 31
+    subjects:
+    - POL
+    - INF
+    - GEO
+    - REL
+  - code: D
+    size: 30
+    subjects:
+    - FIZ
+    - REL
+    - POL
+    - ANG
+  - code: E
+    size: 34
+    subjects:
+    - W-F
+    - POL
+    - BIO
+    - MAT
+  code: G
+  name: Ruiz, Thompson and Anderson
+- classes:
+  - code: A
+    size: 29
+    subjects:
+    - HIS
+    - MAT
+    - ANG
+    - GEO
+  - code: B
+    size: 33
+    subjects:
+    - BIO
+    - HIS
+    - INF
+    - WOS
+  - code: C
+    size: 32
+    subjects:
+    - HIS
+    - GEO
+    - BIO
+    - POL
+  - code: D
+    size: 25
+    subjects:
+    - INF
+    - ANG
+    - W-F
+    - GEO
+  - code: E
+    size: 26
+    subjects:
+    - INF
+    - MAT
+    - BIO
+    - REL
+  code: H
+  name: Frey-Rice
+- classes:
+  - code: A
+    size: 26
+    subjects:
+    - W-F
+    - HIS
+    - MAT
+    - BIO
+  - code: B
+    size: 26
+    subjects:
+    - GEO
+    - HIS
+    - POL
+    - FIZ
+  - code: C
+    size: 29
+    subjects:
+    - BIO
+    - HIS
+    - CHE
+    - POL
+  - code: D
+    size: 29
+    subjects:
+    - WOS
+    - CHE
+    - MAT
+    - REL
+  - code: E
+    size: 30
+    subjects:
+    - POL
+    - ANG
+    - BIO
+    - REL
+  code: I
+  name: Campbell Inc
+- classes:
+  - code: A
+    size: 25
+    subjects:
+    - CHE
+    - INF
+    - BIO
+    - MAT
+  - code: B
+    size: 29
+    subjects:
+    - MAT
+    - HIS
+    - W-F
+    - ANG
+  - code: C
+    size: 33
+    subjects:
+    - BIO
+    - REL
+    - CHE
+    - INF
+  - code: D
+    size: 28
+    subjects:
+    - CHE
+    - REL
+    - HIS
+    - WOS
+  code: J
+  name: Gallegos Inc
